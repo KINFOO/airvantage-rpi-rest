@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.2
+#!/usr/bin/env python3
 from argparse import ArgumentParser
 import json
 import requests
@@ -31,7 +31,8 @@ data = [
 ]
 
 # Using Basic Authentication
-url = "https://na.airvantage.net/device/messages"
+host = "https://na.airvantage.net"
+url = "{}/device/messages".format( host )
 print("Sending to {}.".format(url))
 response = requests.post( url,
   auth=(args.identifier, args.password),
@@ -41,7 +42,7 @@ response = requests.post( url,
 print("Response: {}. Content: {}".format(response.status_code, response.text))
 
 # Check if there are messages
-message_url = "https://na.airvantage.net/device/tasks"
+message_url = "{}/device/tasks".format( host )
 print("Checking for messages at {}.".format(message_url))
 response = requests.get( message_url,
   auth=(args.identifier, args.password),
