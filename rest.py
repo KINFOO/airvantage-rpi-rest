@@ -7,7 +7,7 @@ from time import time
 # Parse arguments
 parser = ArgumentParser(description="Using RESTful AirVantage.")
 parser.add_argument("identifier",
-  help="Your identifier, like a trimmed a MAC address.")
+  help="Your identifier, defined on AirVantage, here a trimmed a MAC address.")
 parser.add_argument("password", help="REST password.")
 args = parser.parse_args()
 
