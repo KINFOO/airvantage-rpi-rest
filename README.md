@@ -1,5 +1,2 @@
-airvantage-rpi-rest
-===================
-
-Using AirVantage REST API for devices on Raspberry Pi it is all explained on
-[airvantage.github.io](http://airvantage.github.io/tutorials/raspberry-pi-rest/).
+# AirVantage-rpi-rest
+Using AirVantage REST API for devices on Raspberry Pi is all explained at [doc.airvantage.net](https://doc.airvantage.net/av/howto/hardware/samples/rpi-rest-pyth/).
