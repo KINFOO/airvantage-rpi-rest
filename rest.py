@@ -14,7 +14,7 @@ args = parser.parse_args()
 #
 # Sending data to AirVantage
 #
-timestamp = int( time() )
+timestamp = int( time() * 1000)
 # +1 and +2 are here to avoid aving several data points at the same time
 data = [
   {
@@ -32,7 +32,7 @@ data = [
 ]
 
 # Using Basic Authentication
-host = "https://na.airvantage.net"
+host = "https://eu.airvantage.net"
 url = "{}/device/messages".format( host )
 print("Sending to {}.".format(url))
 response = requests.post( url,
