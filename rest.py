@@ -15,13 +15,13 @@ args = parser.parse_args()
 # Sending data to AirVantage
 #
 timestamp = int( time() * 1000)
-# +1 and +2 are here to avoid aving several data points at the same time
+# +1000 and +2000 are here to avoid aving several data points at the same time
 data = [
   {
     "machine.temperature": [
       { "value" : "23.2", "timestamp" : timestamp },
-      { "value" : "24.5", "timestamp" : timestamp + 1 },
-      { "value" : "22.9", "timestamp" : timestamp + 2 }
+      { "value" : "24.5", "timestamp" : timestamp + 1000 },
+      { "value" : "22.9", "timestamp" : timestamp + 2000 }
     ]
   },
   {
